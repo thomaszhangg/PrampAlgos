@@ -1,2 +1,2 @@
 # PrampAlgos
-Interview questions for my reference
+Practice questions I've come across for my reference.
