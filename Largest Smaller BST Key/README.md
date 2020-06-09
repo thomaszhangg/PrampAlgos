@@ -13,8 +13,3 @@ Your function would return:
 
 14 since it’s the largest key in the tree that is still smaller than 17.
 
-Constraints:
-
-[time limit] 5000ms
-[input] Node rootNode
-[output] integer
