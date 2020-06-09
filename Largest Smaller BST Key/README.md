@@ -5,13 +5,11 @@ Given a root of a Binary Search Tree (BST) and a number num, implement an effici
 Analyze the time and space complexities of your solution.
 
 # Example:
+
 For num = 17 and the binary search tree below:
 
-<img align="left" width="100" height="100" src="https://github.com/thomaszhangg/PrampAlgos/blob/master/Largest%20Smaller%20BST%20Key/example.png">
-<!-- ![](https://github.com/thomaszhangg/PrampAlgos/blob/master/Largest%20Smaller%20BST%20Key/example.png) -->
-
+<img align="left" width="400" height="400" src="https://github.com/thomaszhangg/PrampAlgos/blob/master/Largest%20Smaller%20BST%20Key/example.png">
 
 Your function would return:
 
 14 since it’s the largest key in the tree that is still smaller than 17.
-
