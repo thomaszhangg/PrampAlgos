@@ -6,7 +6,7 @@ Analyze the time and space complexities of your solution.
 
 # Example:
 For num = 17 and the binary search tree below:
-![]()
+![](https://github.com/thomaszhangg/PrampAlgos/blob/master/Largest%20Smaller%20BST%20Key/example.png)
 
 
 Your function would return:
