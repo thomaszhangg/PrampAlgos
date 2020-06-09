@@ -6,11 +6,9 @@ Analyze the time and space complexities of your solution.
 
 # Example:
 
-For num = 17 and the binary search tree below:
-
-<div>
 <img align="left" width="400" height="400" src="https://github.com/thomaszhangg/PrampAlgos/blob/master/Largest%20Smaller%20BST%20Key/example.png">
-</div>
+
+For num = 17 and this binary search tree:
 
 Your function would return:
 
