@@ -88,7 +88,7 @@ BinarySearchTree.prototype.insert = function (key) {
 
 // Test
 // Create a Binary Search Tree
-var bst = new BinarySearchTree();
+let bst = new BinarySearchTree();
 bst.insert(20);
 bst.insert(9);
 bst.insert(25);
