@@ -1,6 +1,6 @@
-// Solution is implemented starting at line 16
+// Solution is implemented starting line 16
 
-// Part 1: Traversing the Tree
+// PART 1: Traversing the Tree
 // Properties of a BST:
 // 1) A node in a BST is LARGER than all keys in its LEFT subtree
 // 2) A node in a BST is SMALLER than all keys in its RIGHT subtree
@@ -9,16 +9,16 @@
 // A valid candidate is one who's value is strictly less than the number we are looking for
 // Our final answer will be the LARGEST value in our BST that is SMALLER than the given number
 
-// Part 2: Finding the Best Candidate (node)
+// PART 2: Finding the Best Candidate (node)
 // While root !== null, for each node we choose to traverse to its left or right child depending on the comparison between the given num and current node's value
 // If current node's value is LESS than num, this node is a candidate and we continue traversing RIGHT to find a better candidate
 // If current node's value is LARGER than num, we do NOT reassign candidate as this is not a possible answer, and traverse LEFT to find a smaller node
 // Our exit condition for this while loop traversal is when we have reached pass our leaf nodes (root === null)
 // At this point, we would've considered all possible candidates and will be left with the largest key smaller than the given num.
 
+// Time & Space Analysis:
 // TIME COMPLEXITY: O(logN) assuming tree is balanced. Worst case the tree is completely one-sided (like a LinkedList), and we would traverse EVERY node - O(N)
-// SPACE COMPLEXIRTY: O(1) since we are using a constant amount of space, candidate and root.
-
+// SPACE COMPLEXIRTY: O(1) we are using a constant amount of space, candidate and root.
 
 // Constructor to create a new Node
 function Node(key) {
@@ -85,10 +85,8 @@ BinarySearchTree.prototype.insert = function (key) {
   }
 };
 
-/*********************************************
- * Driver program to test above function     *
- *********************************************/
 
+// Test
 // Create a Binary Search Tree
 var bst = new BinarySearchTree();
 bst.insert(20);
