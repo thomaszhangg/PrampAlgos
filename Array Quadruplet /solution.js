@@ -5,7 +5,7 @@
 // We use a 2 pointer approach start and end. 
 // If arr[start] + arr[end] is greater than remaining sum, we will decrement end. This'll ensure the next iteration of arr[start] + arr[end] will decrease since the array is sorted
 // If arr[start] + arr[end] is less than remaining sum, same logic - we increment start to ensure a greater value next iteration
-
+// If at any point we find that arr[start] + arr[end] = remainingSum, we can return all 4 numbers as arr[i] + arr[j] + arr[start] + arr[end] === s
 
 function findArrayQuadruplet(arr, s) {
   arr.sort((a, b) => a - b);
