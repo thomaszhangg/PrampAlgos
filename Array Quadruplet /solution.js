@@ -3,7 +3,9 @@
 // A better approach we can take is to start by sorting the given array in ascending order, this'll ensure we return the first valid array
 // Our first 2 loops will (arr[i] + arr[j]). We can then subtract it from sum and check j+1 through end of the array for 2 numbers that add up to that remaining sum
 // We use a 2 pointer approach start and end. 
-// If arr[start] + arr[end] is greater than remaining sum, we 
+// If arr[start] + arr[end] is greater than remaining sum, we will decrement end. This'll ensure the next iteration of arr[start] + arr[end] will decrease since the array is sorted
+// If arr[start] + arr[end] is less than remaining sum, same logic - we increment start to ensure a greater value next iteration
+
 
 function findArrayQuadruplet(arr, s) {
   arr.sort((a, b) => a - b);
