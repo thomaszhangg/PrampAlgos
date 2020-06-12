@@ -24,3 +24,7 @@ function findArrayQuadruplet(arr, s) {
   return results;
 }
 
+
+// Test
+let input = [2, 7, 4, 0, 9, 5, 1, 3]    // [0, 4, 7, 9] 
+console.log('This output should equal [0, 4, 7 ,9]', findArrayQuadruplet(input, 20))
