@@ -19,4 +19,10 @@ const absSort = (arr) => {
     })
   }
 
-  
+
+  // Test
+  let input = [2, -7, -2, -2, 0]
+
+  console.log('This output should be [0, -2, -2, 2, -7', absSort(input))
+
+

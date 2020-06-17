@@ -99,4 +99,4 @@ bst.insert(14);
 
 var result = bst.findLargestSmallerKey(17);
 
-console.log('Largest smaller number is ' + result);
+console.log('The largest smaller number should be 14 :', result);
