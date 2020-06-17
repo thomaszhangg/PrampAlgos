@@ -42,3 +42,10 @@ function findPaths(x, y, memo) {
 
   return memo[x][y];
 }
+
+
+// Test
+let result = numOfPathsToDest(4)
+
+console.log('There should be 5 paths to destination given a 4x4 grid :', result)
+
