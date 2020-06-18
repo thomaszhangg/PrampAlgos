@@ -21,11 +21,11 @@ const minAddToMakeValid = (s) => {
       if (stack[stack.length - 1] === '(') {        // lets check the top of our stack. if it's an open...
         stack.pop();                                // pop the open paren off as this cancels the closing paren we just encountered
       } else {
-        stack.push(paren);                          // if 
+        stack.push(paren);                          // if the top of our stack is not an open OR our stack is empty, we'll push this closing paren on
       }
     }
   }
-  return stack.length;
+  return stack.length;                              // we'll be left with unbalanced parens, meaning we'll need this number of parens to balance them out
 };
 
 
