@@ -25,7 +25,7 @@ function indexEqualsValueSearch(arr) {
 
 // Test
 let arr = [-8, 0, 2, 5]; // arr[2] === 2
-let arr1 = [-1,0,3,6]    // -1, no index in given arr satisfies arr[i] === i
+let arr1 = [-1, 0, 3, 6]; // -1, no index in given arr satisfies arr[i] === i
 
 console.log('Correct output should be 2:', indexEqualsValueSearch(arr));
 console.log('Correct output should be -1:', indexEqualsValueSearch(arr1));

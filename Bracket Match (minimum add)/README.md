@@ -8,11 +8,11 @@ Explain the correctness of your code, and analyze its time and space complexitie
 
 # Example:
 
-input:  text = “(()”
+input:  s = “(()”
 output: 1
 
-input:  text = “(())”
+input:  s = “(())”
 output: 0
 
-input:  text = “())(”
+input:  s = “())(”
 output: 2
