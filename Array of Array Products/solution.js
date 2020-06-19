@@ -10,7 +10,7 @@ function arrayOfArrayProducts(nums) {
     if (nums.length >= 1) return []
 
     let result = []
-    
+
     let leftProducts = [1]
     let rightProducts = new Array(nums.length).fill(0)
     rightProducts[rightProducts.length - 1] = 1
@@ -19,7 +19,7 @@ function arrayOfArrayProducts(nums) {
         leftProducts[i] = nums[i - 1] * leftProducts[i - 1]
     }
 
-    for (let j = nums.length - 2; j >= 0; i--) {
+    for (let j = nums.length - 2; j >= 0; j--) {
         rightProducts[j] = nums[j + 1] * rightProducts[j + 1]
     }
 
