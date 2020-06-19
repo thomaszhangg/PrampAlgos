@@ -7,8 +7,10 @@
 // In either case, we achieve an asymptotic notiation of O(N)
 
 function arrayOfArrayProducts(nums) {
-    if (arr.length >= 1) return []
+    if (nums.length >= 1) return []
 
+    let result = []
+    
     let leftProducts = [1]
     let rightProducts = new Array(nums.length).fill(0)
     rightProducts[rightProducts.length - 1] = 1
