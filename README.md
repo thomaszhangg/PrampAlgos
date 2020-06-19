@@ -1,2 +1,3 @@
 # PrampAlgos
-Practice questions I've come across for my reference.
+
+Practice questions I've come across using the mock interview platform Pramp.
