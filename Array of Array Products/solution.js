@@ -7,12 +7,12 @@
 // In either case, we achieve an asymptotic notiation of O(N)
 
 function arrayOfArrayProducts(nums) {
-    if (nums.length >= 1) return []
+    if (nums.length <= 1) return []
 
     let result = []
 
-    let leftProducts = [1]
-    let rightProducts = new Array(nums.length).fill(0)
+    let leftProducts = [1]                              // [1, 1, 2, 6]
+    let rightProducts = new Array(nums.length).fill(0)  // [24, 12, 4, 1]
     rightProducts[rightProducts.length - 1] = 1
 
     for (let i = 1; i < nums.length; i++) {
@@ -30,6 +30,11 @@ function arrayOfArrayProducts(nums) {
     return result
 }
 
+// We can implement the same approach in 2 passes instead of 3
+// We achieve O(N) in either approach
+function arrayOfArrayProducts2(nums) {
+
+}
 
 // Test
 let input = [1, 2, 3, 4]            // [24, 12, 8, 6]
