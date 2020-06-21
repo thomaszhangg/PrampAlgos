@@ -13,7 +13,8 @@ function getNumberOfIslands(binaryMatrix) {
   for (let i = 0; i < binaryMatrix.length; i++) {
     for (let j = 0; j < binaryMatrix[0].length; j++) {
       if (binaryMatrix[i][j] === 1) {
-        count += DFS(binaryMatrix, i, j);
+        // We'll "expand" from the initial encounter of the island and "sink" all connected parts by changing value to 0
+        count += DFS(binaryMatrix, i, j); // DFS(matrix, i, j) will return 1 after our helper DFS changes all connected 1's into 0's (we won't recount the same island)
       }
     }
   }
@@ -42,3 +43,15 @@ function getNumberOfIslands(binaryMatrix) {
 }
 
 // Test
+let input = [
+  [0, 1, 0, 1, 0],
+  [0, 0, 1, 1, 1],
+  [1, 0, 0, 1, 0],
+  [0, 1, 1, 0, 0],
+  [1, 0, 1, 0, 1],
+];
+
+console.log(
+  'There should be 6 islands in this matrix:',
+  getNumberOfIslands(input)
+);
