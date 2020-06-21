@@ -6,7 +6,8 @@ Analyze the time and space complexities of your solution.
 
 # Example:
 
-<img align="right" width="400" height="400" src="https://github.com/thomaszhangg/PrampAlgos/blob/master/Largest%20Smaller%20BST%20Key/example.png">
+![](https://github.com/thomaszhangg/PrampAlgos/blob/master/Largest%20Smaller%20BST%20Key/example.png)
+<!-- <img align="right" width="400" height="400" src="https://github.com/thomaszhangg/PrampAlgos/blob/master/Largest%20Smaller%20BST%20Key/example.png"> -->
 
 For num = 17 and this binary search tree:
 
