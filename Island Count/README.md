@@ -16,3 +16,5 @@ input: binaryMatrix =
 [1, 0, 1, 0, 1] ]
 
 output: 6 # since this is the number of islands in binaryMatrix. # See all 6 islands color-coded below.
+
+![](https://github.com/thomaszhangg/PrampAlgos/blob/master/Island%20Count/example.png)
