@@ -12,9 +12,8 @@ function getNumberOfIslands(binaryMatrix) {
 
   for (let i = 0; i < binaryMatrix.length; i++) {
     for (let j = 0; j < binaryMatrix[0].length; j++) {
-      if (binaryMatrix[i][j] === 1) {
-        // We'll "expand" from the initial encounter of the island and "sink" all connected parts by changing value to 0
-        count += DFS(binaryMatrix, i, j); // DFS(matrix, i, j) will return 1 after our helper DFS changes all connected 1's into 0's (we won't recount the same island)
+      if (binaryMatrix[i][j] === 1) {                            // We'll "expand" from the initial encounter of the island and "sink" all connected parts by changing value to 0
+        count += DFS(binaryMatrix, i, j);                        // DFS(matrix, i, j) will return 1 after our helper DFS changes all connected 1's into 0's (we won't recount the same island)
       }
     }
   }
@@ -22,8 +21,8 @@ function getNumberOfIslands(binaryMatrix) {
   return count;
 
   function DFS(grid, i, j) {
-    if (
-      i < 0 ||
+    if (                                                      // Before we change connected lands into 0's, first we'll make sure we aren't out of the matrix boundaries
+      i < 0 ||                                                // AND we must ensure we aren't changing a cell that is NOT a part of the land (like a 0)
       i >= binaryMatrix.length ||
       j < 0 ||
       j >= binaryMatrix[i].length ||
@@ -32,13 +31,13 @@ function getNumberOfIslands(binaryMatrix) {
       return;
     }
 
-    binaryMatrix[i][j] = 0;
+    binaryMatrix[i][j] = 0;                                 // "Sink" the cell to avoid recounting the same island
     DFS(grid, i - 1, j);
     DFS(grid, i + 1, j);
     DFS(grid, i, j - 1);
     DFS(grid, i, j + 1);
 
-    return 1;
+    return 1;                                              // We will count this island only after we've sunk all connected parts
   }
 }
 
