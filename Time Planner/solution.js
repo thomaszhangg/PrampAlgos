@@ -22,8 +22,8 @@ function meetingPlanner(slotsA, slotsB, dur) {
       // if not big enough, decide which pointer to increment
       else {
         // we want to increment the pointer with the SMALLER interval END
-        // bc we have not fully explored the interval with LARGER interval END 
-        // ^ we may still use this interval in next iteration
+        // because we have not fully explored the interval with LARGER interval END 
+        // ^ this interval may have a time duration in which it overlaps during the next iteration
         if (slotsA[aPointer][1] > slotsB[bPointer][1]) {
           bPointer++
         } else {
@@ -36,4 +36,5 @@ function meetingPlanner(slotsA, slotsB, dur) {
     return []
   }
 
-  //
+  // Test
+  
