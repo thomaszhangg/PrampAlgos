@@ -41,4 +41,4 @@ function meetingPlanner(slotsA, slotsB, dur) {
   let inputB = [[0, 15], [60, 70]]
   let dur = 8
 
-  con
+  console.log("Overlapping interval should be [60, 68", meetingPlanner(inputA, inputB, dur))
