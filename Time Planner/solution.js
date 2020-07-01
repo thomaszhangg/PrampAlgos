@@ -37,4 +37,8 @@ function meetingPlanner(slotsA, slotsB, dur) {
   }
 
   // Test
-  
+  let inputA = [[10, 50], [60, 120], [140, 210]]
+  let inputB = [[0, 15], [60, 70]]
+  let dur = 8
+
+  con
